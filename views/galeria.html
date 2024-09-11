@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Perez</title>
+    <link rel="stylesheet" href="../styles/styles.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+    <link rel="stylesheet" href="../styles/galeria.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="../javascript/galeria.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="paginas">
+            <img src="../img/logo.jpg" id="logo"  alt="logo">
+            <a class='navbar' href="../index.html">Inicio</a>
+            <a class='navbar activo' href="../views/galeria.html">Galería</a>
+            <a class='navbar' href="../views/presupuestos.html">Presupuestos</a>
+            <a class='navbar' href="../views/contacto.html">Contacto</a>
+        </div>
+    </nav>
+    <main id="body_galeria">
+        <header>
+            <h1 class="galeriah1">Galería de Productos</h1>
+        </header>
+
+        <section class="gallery">
+            <div class="gallery-item" data-target="subproductos-1">
+                <img src="../img/ordenador_dell.jpg" alt="Ordenador de Alta Gama">
+                <div class="description">
+                    <h2>Ordenador de Alta Gama</h2>
+                    <p>Potente ordenador con procesador de última generación, ideal para gaming y diseño gráfico.</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-target="subproductos-2">
+                <img src="../img/image2.jpg" alt="Portátil Ultraligero">
+                <div class="description">
+                    <h2>Portátil Ultraligero</h2>
+                    <p>Portátil ligero y potente, perfecto para llevar a todas partes y trabajar en movimiento.</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-target="subproductos-3">
+                <img src="../img/ipadpro.jpg" alt="Tablet de Alta Resolución">
+                <div class="description">
+                    <h2>Tablet de Alta Resolución</h2>
+                    <p>Tablet con pantalla de alta resolución y excelente rendimiento para el entretenimiento y la productividad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenedores ocultos para los subproductos -->
+        <div id="subproductos-1" class="subproductos-overlay">
+            <div class="subproductos-content">
+                <!-- Botón de cierre -->
+                <button class="close-overlay">X</button>
+                <div class="subproduct">
+                    <img src="../img/ordenador_dell.jpg" alt="Subproducto 1">
+                    <p>Ordenador Marca Dell</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/hp_ordenador.jpg" alt="Subproducto 2">
+                    <p>Ordenador Marca HP</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/ordenador_acer.jpg" alt="Subproducto 3">
+                    <p>Ordenador Marca ACER</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="subproductos-2" class="subproductos-overlay">
+            <div class="subproductos-content">
+                <!-- Botón de cierre -->
+                <button class="close-overlay">X</button>
+                <div class="subproduct">
+                    <img src="../img/portatil_dell.jpg" alt="Subproducto 1">
+                    <p>Portatil Marca Dell</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/hp_portatil.jpg" alt="Subproducto 2">
+                    <p>Portatil Marca HP</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/portatil_acer.jpg" alt="Subproducto 3">
+                    <p>Portatil Marca ACER</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="subproductos-3" class="subproductos-overlay">
+            <div class="subproductos-content">
+                <!-- Botón de cierre -->
+                <button class="close-overlay">X</button>
+                <div class="subproduct">
+                    <img src="../img/ipadpro.jpg" alt="Subproducto 1">
+                    <p>Tablet Marca Apple</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/samsungtab.jpg" alt="Subproducto 2">
+                    <p>Tablet Marca Samsung</p>
+                </div>
+                <div class="subproduct">
+                    <img src="../img/lenovo.png" alt="Subproducto 3">
+                    <p>Tablet Marca Lenovo</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="footerhr"> 
+    <footer class="footer">
+        <a>Diego Perez S.A</a> <br>
+        <a>Todos los derechos se reservan</a>
+    </footer>
+</body>
+</html>

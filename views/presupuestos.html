@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Perez</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/presupuesto.css"><link rel="stylesheet"
+        href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+
+
+</head>
+
+<body>
+    <!-- _*_*_*_*_*_*_*_*_*_  BARRA DE NAVEGACION  _*_*_*_*_*_*_*_*_-->
+    <nav class="nav">
+
+        <div class="paginas">
+            <img src="../img/logo.jpg" id="logo" alt="logo">
+            <a class='navbar' href="../index.html">Inicio</a>
+            <a class='navbar' href="../views/galeria.html">Galeria</a>
+            <a class='navbar activo' href="../views/presupuestos.html">Presupuestos</a>
+            <a class='navbar' href="../views/contacto.html">Contacto</a>
+        </div>
+
+    </nav>
+    <!-- _*_*_*_*_*_*_*_*_*_  CONTENIDO PRINCIPAL  _*_*_*_*_*_*_*_*_-->
+
+
+    <main>
+        <header>
+            <h1>Presupuesto</h1>
+        </header>
+        <div class="container">
+
+            <form class="forma1" id="forma1">
+                <h2 class="h2Presupuesto">Solicita tu presupuesto</h2>
+
+                <div class="contacto">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="error-message" id="nombreError"></div>
+                    <label for="apellido">Apellidos:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <div class="error-message" id="apellidoError"></div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError"></div>
+
+                    <label for="telefono">Teléfono Contacto:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                    <div class="error-message" id="telefonoError"></div>
+
+                </div>
+                <div class="presupuesto">
+
+                    <label for="producto">Producto:</label>
+                    <select id="producto">
+                        <option value="0" disabled selected>Selecciona un producto</option>
+                        <option value="Portatil">Portatil</option>
+                        <option value="Ordenador">Ordenador</option>
+                        <option value="Tablet">Tablet</option>
+                    </select>
+
+                    <label id="modelo1">Modelo:</label>
+                    <select id="modelo" required disabled>
+                        <option label=" " value="" disabled selected></option>
+                        <option label=" " value=""></option>
+                        <option label=" " value=""></option>
+                        <option label=" " value=""></option>
+                    </select>
+
+                    <label id="caracteristica1">Configuración:</label>
+                    <select id="caracteristica" required disabled>
+                        <option label=" "> </option>
+                        <option label=" " value="0"></option>
+                        <option label=" " value="0"></option>
+                        <option label=" " value="0"></option>
+                    </select>
+                </div>
+
+                <div class="checkbox-container">
+                    <h3>Plazo de Entrega (Porcentaje de descuento) </h3>
+                    <label><input type="checkbox" name="checkbox%" value="5"> 5 Dias (5%)</label>
+                    <label><input type="checkbox" name="checkbox%" value="10"> 15 Dias (10%)</label>
+                    <label><input type="checkbox" name="checkbox%" value="15"> 30 Dias (15%)</label> <br>
+
+                </div>
+                <div class="error-message" id="plazoError"></div>
+
+                <div class="total"> Total presupuesto: €<span id="precio-total">0</span>
+                    <label>Descuento de: €<span id="descuento">0</span></label>
+
+                </div>
+
+                <div class="checkbox-label1">
+                    <label class=" checkbox-label">
+                        <input type="checkbox" id="privacidad" required>
+                        Acepto la política de privacidad
+                    </label>
+                    <input type="submit" value="Enviar Presupuesto" id="submit-btn">
+                    <button type="button" id="resetBtn">Reset fromulario</button>
+                </div>
+            </form>
+        </div>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../javascript/prespuesto.js"></script>
+    </main>
+    <hr class="footerhr">
+    <footer class="footer">
+        <a>Diego Perez S.A</a> <br>
+        <a>Todos los derechos se reservan</a>
+    </footer>
+</body>
+
+</html>

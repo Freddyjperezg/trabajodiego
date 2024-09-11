@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diego Perez</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script defer src="./javascript/index.js"></script>
+        <!-- <link rel="stylesheet" href="./javascript/index.js"><link rel="stylesheet" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- _*_*_*_*_*_*_*_*_*_  BARRA DE NAVEGACION  _*_*_*_*_*_*_*_*_-->
+    <nav class="nav">
+        <div class="paginas">
+            <img src="./img/logo.jpg" id="logo" alt="logo">
+            <a class='navbar activo' href="./index.html">Inicio</a>
+            <a class='navbar' href="./views/galeria.html">Galeria</a>
+            <a class='navbar' href="./views/presupuestos.html">Presupuestos</a>
+            <a class='navbar' href="./views/contacto.html">Contacto</a>
+
+        </div>
+    </nav>
+
+    <!-- _*_*_*_*_*_*_*_*_*_  CONTENIDO PRINCIPAL  _*_*_*_*_*_*_*_*_-->
+    <main>
+        <h1>PerezTech</h1>
+        <h2>Venta de Ordenadores, Portátiles y Tablets</h2>
+        <div class="main">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item"><img class="imagen" src="./img/image1.jpg"
+                            alt="Image 1"></div>
+                    <div class="carousel-item"><img class="imagen" src="./img/image2.jpg"
+                            alt="Image 2"></div>
+                    <div class="carousel-item"><img class="imagen" src="./img/image3.jpg"
+                            alt="Image 3"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Sección 1: Productos Destacados -->
+        <section id="productos-destacados" class="section">
+            <h2>Productos Destacados</h2>
+            <div class="container">
+                <div class="panel active"
+                    style="background-image: url('./img/ordenador_dell.jpg')">
+                    <h3>Ordenadores</h3>
+                </div>
+                <div class="panel" style="background-image: url('./img/hp_portatil.jpg')">
+                    <h3>Portatiles</h3>
+                </div>
+                <div class="panel" style="background-image: url('./img/ipadpro.jpg')">
+                    <h3>Tablets</h3>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <!-- Sección 2: Testimonios de Clientes -->
+        <section id="testimonios" class="section">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonios">
+                <div class="testimonio">
+                    <p>"El mejor servicio y productos de alta calidad!" - Juan Pérez</p>
+                </div>
+                <div class="testimonio">
+                    <p>"Recomiendo 100%, excelente atención al cliente." - María López</p>
+                </div>
+                <div class="testimonio">
+                    <p>"Precios competitivos y gran soporte técnico." - Carlos González</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Sección 3: Noticias Recientes (Cargadas desde un archivo JSON) -->
+        <div class="containerNoticias">
+            <h1>Noticias sobre Tecnología</h1>
+            <hr>
+            <div id="noticias-container"></div>
+        </div>
+        <hr>
+
+        <!-- Sección 4: Formulario de Suscripción -->
+        <section id="suscripcion" class="section">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <form id="formulario-suscripcion">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+    <hr class="footerhr">
+    <footer class="footer">
+        <a>Diego Perez S.A</a> <br>
+        <a>Todos los derechos se reservan</a>
+    </footer>
+</body>
+
+</html>

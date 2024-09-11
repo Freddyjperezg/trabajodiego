@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Perez</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/contactos.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
+
+
+</head>
+
+<body>
+    <!-- _*_*_*_*_*_*_*_*_*_  BARRA DE NAVEGACION  _*_*_*_*_*_*_*_*_-->
+    <nav class="nav">
+
+        <div class="paginas">
+            <img src="../img/logo.jpg" id="logo" alt="logo">
+            <a class='navbar' href="../index.html">Inicio</a>
+            <a class='navbar' href="../views/galeria.html">Galeria</a>
+            <a class='navbar' href="../views/presupuestos.html">Presupuestos</a>
+            <a class='navbar activo' href="../views/contacto.html">Contacto</a>
+
+        </div>
+
+    </nav>
+    <!-- _*_*_*_*_*_*_*_*_*_  CONTENIDO PRINCIPAL  _*_*_*_*_*_*_*_*_-->
+
+    <div class="containerContactos">
+        <h1>Contacto</h1>
+        <div class="contact-info">
+            <p><strong>Nombre del negocio:</strong> PerezTech</p>
+            <p><strong>Dirección:</strong> Plaza Maria Angustina, Castellon de la plana,Castellon, España</p>
+            <p><strong>Teléfono:</strong> 643444555</p>
+            <p><strong>Email:</strong> pereztech@empresafalsa.com</p>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="route">
+            <h2>Calcula tu ruta</h2>
+            <label style="color:white" for="direccion">Introduce tu ubicación:</label>
+            <input id="direccion" type="text" placeholder="Introduce tu dirección" />
+            <button style="color:white" onclick="calcularRuta()">Calcular ruta</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <a>Diego Perez S.A</a> <br>
+        <a>Todos los derechos se reservan</a>
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwp_UNlSoFOlrPgRLmxsqZy4-F3zqP1r0&loading=async&region=ES&libraries=places&callback=initMap"
+        async defer></script>
+    <script defer src="../javascript/contacto.js"></script>
+</body>
+
+</html>

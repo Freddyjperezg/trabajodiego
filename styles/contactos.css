@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    text-align: center;
+}
+
+.containerContactos {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.route {
+    text-align: center;
+}
+
+.route input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.route button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.route button:hover {
+    background-color: #0056b3;
+}
